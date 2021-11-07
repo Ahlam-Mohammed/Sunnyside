@@ -1,5 +1,5 @@
 /* Small Screen */
-@media screen and (max-width: 568px) and (min-width: 360px) {
+@media screen and (max-width: 568px) and (min-width: 220px) {
     .header {
         background-image: url(../images/mobile/image-header.jpg);
         height: 526px;
@@ -52,7 +52,8 @@
         margin: 10px 0 ;
     }
     .container .content .details span {
-        right: 101px;
+        right: 90px;
+        top: 9px;
     }
     .container .content .details p ,
     .container .content#additional .details p ,
