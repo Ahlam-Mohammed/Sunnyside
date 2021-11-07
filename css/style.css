@@ -1,0 +1,373 @@
+/* Variables */
+:root {
+    --main-font: 'Fraunces', serif;
+    --secondary-font: 'Barlow', sans-serif;   
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+main {
+    background-color: #FFFBF8;
+}
+.header nav .menu ul li a ,
+.header .intro-text h1 {
+    color: hsl(0, 0%, 100%);
+}
+.container .content .details h1 ,
+.container .content .details a ,
+.header .menu-mobile ul li a ,
+.client .card h4 {
+    color: hsl(212, 27%, 19%);
+}
+.container .content .details p ,
+.client .card p {
+    color: hsl(232, 10%, 55%);
+}
+.container .content#additional #img1 h1 ,
+.container .content#additional #img1 p ,
+footer .about-us h1 , footer .about-us li a {
+    color: hsl(167, 40%, 24%);
+}
+.container .content#additional #img2 h1 ,
+.container .content#additional #img2 p ,
+.header nav ul li.contact a  {
+    color: hsl(198, 62%, 26%);
+}
+.title h1 ,.client .card h6 {
+    color: hsl(210, 4%, 67%);
+}
+/* Start Heder */
+.header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header nav .logo {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.header nav .menu ,
+.header .menu-mobile {
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.header nav .menu ul li a ,
+footer li a {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 16px;
+}
+.header nav .menu ul li a {
+    margin-left: 40px;
+}
+.header nav ul li.contact a {
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+    border-radius: 80px;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+}
+.header nav ul li.contact a:hover {
+    background-color: hsla(0, 0%, 100%, 0.24);
+    color: #fff;
+}
+.header .menu-mobile {
+    position: relative;
+    display: none;
+}
+.header .menu-mobile .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header .menu-mobile .icon span {
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 6px;
+    height: 2px;
+    width: 100%;
+}
+.header .menu-mobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 50%;
+    min-width: 303px;
+    top: calc(100% + 30px);
+    display: none;
+    z-index: 1;
+}
+.header .menu-mobile ul::before {
+    content: "";
+    border-width: 21px;
+    border-style: solid;
+    border-color: transparent hsl(0, 0%, 100%) transparent transparent;
+    position: absolute;
+    right: 0px;
+    top: -20px;
+}
+.header .menu-mobile:hover ul {
+    display: block;
+}
+.header .menu-mobile ul li a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 16px;
+}
+.header nav .menu-mobile ul li.contact a {
+    margin: 10px 75px 29px;
+    background: hsl(51, 100%, 49%);
+}
+.header .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    -webkit-transform: translate(-50% ,-50%);
+    -moz-transform: translate(-50% ,-50%);
+    -ms-transform: translate(-50% ,-50%);
+    -o-transform: translate(-50% ,-50%);
+}
+.header .intro-text h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+.header .intro-text img {
+    margin-top: 75px;
+}
+/* End Heder */
+/* Start Content Section */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.container .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+.container .content#reverse {
+    flex-direction: row-reverse;
+}
+.container .content .details ,
+.container .content .image {
+    width: 50%;
+}
+.container .content .image ,
+.collection .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+}
+.container .content .details {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 10%;
+}
+.container .content .details h1 {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 35px;
+    margin: 20px 0;
+}
+.container .content .details p ,
+.client .card p {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+    margin: 20px 0;
+}
+.container .content .details a {
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 2;
+}
+.container .content .details span {
+    z-index: 0;
+    height: 6px;
+    width: 30%;
+    border-radius:4px;
+    opacity: 0.5;
+    display: block;
+    position: relative;
+    top: 13px;
+    right: 105px;
+    transform: 2s;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    -webkit-transform: 2s;
+    -moz-transform: 2s;
+    -ms-transform: 2s;
+    -o-transform: 2s;
+}
+.container span#span1 {
+    background: hsl(51, 100%, 49%) !important;
+}
+.container span#span2 {
+    background-color: #FF796B !important;
+}
+.container .content .details:hover span {
+    opacity: 1;;
+}
+.container .content img {
+    width: 100%;
+}
+.container .content#additional .image {
+    position: relative;
+}
+.container .content#additional .image .details {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 9%;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+}
+.container .content#additional .image .details h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.container .content#additional .image .details p {
+    font-family: 600;
+}
+/* End Content Section */
+/* Start Client Section */
+.title {
+    padding-top: 120px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.title h1 {
+    font-family: var(--main-font);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.client {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 70%;
+    margin-left: 15%;
+    justify-content: space-around;
+}
+.client .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.client .card p {
+    height: 150px;
+    margin-bottom: 0;
+}
+.client .card img {
+    border-radius: 50%;
+    max-width: 25%;
+    margin-bottom: 20px;
+}
+.client .card .info {
+    height: 50px;
+}
+.client .card h4 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+.client .card h6 {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+/* End Client Section */
+/* Start Collection Images Section */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 300px;
+    margin-top: 100px;
+}
+.collection .image {
+    width: 100%;
+}
+/* End Collection Images Section */
+/* Start Footer */
+footer {
+    background: #90D4C5;
+}
+footer .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .about-us h1 {
+    margin: 40px 0 20px;
+    text-transform: lowercase;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+footer .about-us li a {
+    margin: 30px;
+}
+footer .about-us li a:hover {
+    color: #FFFBF8;
+}
+footer .about-us li img {
+    display: inline;
+    margin: 15px;
+}
+footer .about-us ul:nth-child(2) {
+    margin: 20px 0 40px;
+}
+/* End Footer */

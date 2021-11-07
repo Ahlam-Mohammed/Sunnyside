@@ -1,0 +1,190 @@
+/* Small Screen */
+@media screen and (max-width: 568px) and (min-width: 360px) {
+    .header {
+        background-image: url(../images/mobile/image-header.jpg);
+        height: 526px;
+    }
+    .header nav .menu ul {
+        display: none;
+    }
+    .header .menu-mobile {
+        display: block;
+    }
+    .header .intro-text {
+        height: 200px;
+    }
+    .header .intro-text h1 {
+        font-size: 40px;
+    }
+    .header .intro-text img {
+        margin-top: 55px;
+    }
+    .container .content , 
+    .container .content#reverse {
+        height: auto;
+    }
+    .container .content#additional{
+        flex-direction: column;
+    }
+    .container .content ,
+    .container .content#reverse {
+        flex-direction: column-reverse;
+    }
+    .container .content .image ,
+    .container .content .details {
+        width: 100%;
+    }
+    .container .content .image {
+        height: 300px;
+    }
+    .container .content .details {
+        padding: 10%;
+        justify-content: center;
+        text-align: center;
+    }
+    .container .content#additional .details {
+        width: 90%;
+        left: 5%;
+    }
+    .container .content .details h1 ,
+    .container .content#additional .details h1  {
+         font-size: 20px !important;
+        margin: 10px 0 ;
+    }
+    .container .content .details span {
+        right: 101px;
+    }
+    .container .content .details p ,
+    .container .content#additional .details p ,
+    .container .content .details a  {
+        font-size: 13px !important;
+    }
+    .container .content .details a {
+        margin-left: 86px;
+    }
+    .container .content#additional .image {
+        height: 670px;
+    }
+    .container .content#additional .image#img1 {
+        background-image: url(../images/mobile/image-graphic-design.jpg) !important;
+    }
+    .container .content#additional .image#img2 {
+        background-image: url(../images/mobile/image-photography.jpg) !important;
+    }
+    .title {
+        padding-top: 60px;
+        margin-bottom: 28px;
+    }
+    .title h1 {
+        font-size: 15px;
+    }
+    .client {
+        grid-template-columns: auto;
+    }
+    .client .card {
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+    .client .card p {
+        height: auto;
+    }
+    .client .card .info {
+        margin-top: 25px;
+    }
+    .collection {
+        grid-template-columns: auto auto;
+        grid-auto-rows: 215px;
+    }
+    .collection .image#img1 {
+        background-image: url(../images/mobile/1.jpg);
+    }
+    .collection .image#img2 {
+        background-image: url(../images/mobile/2.jpg);
+    }
+    .collection .image#img3 {
+        background-image: url(../images/mobile/3.jpg);
+    }
+    .collection .image#img4 {
+        background-image: url(../images/mobile/4.jpg);
+    }
+    footer {
+        height: 260px;
+    }
+    footer .about-us {
+        margin-top: 130px;
+    }
+}
+
+/* Medium Screen */
+@media screen and (max-width: 768px) and (min-width: 568px) {
+    .header {
+        background-position: center 79%;
+    }
+    .header .intro-text img {
+        height: 85px;
+    }
+    .header nav .menu ul li a {
+        margin-left: 28px;
+    }
+    .container .content {
+        height: 300px;
+    }
+    .container .content .details {
+        padding: 4%;
+    }
+    .container .content .details h1 ,
+    .container .content#additional h1 {
+        font-size: 20px !important;
+    }
+    .container .content#additional h1 {
+        margin: 0 !important;
+    }
+    .container .content .details p ,
+    .container .content#additional p,
+    .container .content .details a {
+        font-size: 11px !important;
+    }
+    .container .content .details span {
+        top: 9px;
+        right: 85px;
+    }
+    .container .content#additional .details {
+        width: 90% !important;
+        left: 5% !important;
+    }
+    .client {
+        grid-template-columns: auto auto;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .title {
+        padding-top: 94px;
+        margin-bottom: 65px;
+    }
+}
+
+/*--- Big Screen ----*/
+@media screen and (max-width: 1920px) and (min-width: 1601px) {
+    .header nav .menu ul {
+        display: flex;
+    }
+    .container .content {
+        height: 600px;
+    }
+    .container .content .details {
+        padding: 7%;
+    }
+    .container .content .details h1 {
+        font-size: 50px;
+    }
+    .container .content .details p ,
+    .container .content .details a {
+        font-size: 20px;
+    }
+    .container .content .details span {
+        top: 17px;
+        right: 148px;
+        width: 27%;
+    }
+}
+
